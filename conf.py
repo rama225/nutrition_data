@@ -42,12 +42,12 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
               'sphinxcontrib.httpdomain',
              ]
 
-# mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+ mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 
 # -- Intersphinx ---------------------------------------------------------------
 
-# intersphinx_cache_limit = 10     # days to keep the cached inventories
-# intersphinx_mapping = {
+ intersphinx_cache_limit = 10     # days to keep the cached inventories
+ intersphinx_mapping = {
         'sphinx':('http://sphinx.pocoo.org',None),
         'python':('http://docs.python.org/3.2',None),
     'matplotlib':('http://matplotlib.sourceforge.net',None),
@@ -103,11 +103,11 @@ napoleon_use_rtype = True
 
 # -- Autodoc configuration -----------------------------------------------------------------
 
-# autoclass_content = 'class'
+ autoclass_content = 'class'
 
-# autodoc_member_order = 'bysource'
+ autodoc_member_order = 'bysource'
 
-# autodoc_default_flags = ['members']
+ autodoc_default_flags = ['members']
 
 # -- More general configuration ------------------------------------------------------------
 
@@ -148,7 +148,7 @@ number_figures = True
 #today_fmt = '%d %B %Y'
 
 # List of patterns, relative to source directory, that match files and directories to ignore when looking for source files.
-# exclude_patterns = [
+ exclude_patterns = [
                     '_build',
                     'epilog.rst',
                     '_sphinx_lib',
