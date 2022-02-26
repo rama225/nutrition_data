@@ -10,7 +10,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
-    html_theme = 'sphinx_rtd_theme'
+    html_theme = 'alabaster'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # If the directory is relative to the documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -28,7 +28,7 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
 
 # Add any Sphinx extension module names here, as strings.
 # They can be extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
- extensions = [
+extensions = [
               'sphinx.ext.autodoc',
               'sphinx.ext.doctest',
               'sphinx.ext.coverage',
@@ -38,16 +38,16 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
               'sphinx.ext.intersphinx',
               'sphinxcontrib.exceltable',
               'sphinxcontrib.napoleon',
-              'sphinxcontrib.bibtex',
+              'sphinxcontrib-bibtex',
               'sphinxcontrib.httpdomain',
              ]
 
- mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 
 # -- Intersphinx ---------------------------------------------------------------
 
- intersphinx_cache_limit = 10     # days to keep the cached inventories
- intersphinx_mapping = {
+intersphinx_cache_limit = 10     # days to keep the cached inventories
+intersphinx_mapping = {
         'sphinx':('http://sphinx.pocoo.org',None),
         'python':('http://docs.python.org/3.2',None),
     'matplotlib':('http://matplotlib.sourceforge.net',None),
@@ -103,11 +103,11 @@ napoleon_use_rtype = True
 
 # -- Autodoc configuration -----------------------------------------------------------------
 
- autoclass_content = 'class'
+autoclass_content = 'class'
 
- autodoc_member_order = 'bysource'
+autodoc_member_order = 'bysource'
 
- autodoc_default_flags = ['members']
+autodoc_default_flags = ['members']
 
 # -- More general configuration ------------------------------------------------------------
 
@@ -148,7 +148,7 @@ number_figures = True
 #today_fmt = '%d %B %Y'
 
 # List of patterns, relative to source directory, that match files and directories to ignore when looking for source files.
- exclude_patterns = [
+exclude_patterns = [
                     '_build',
                     'epilog.rst',
                     '_sphinx_lib',
