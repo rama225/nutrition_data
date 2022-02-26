@@ -28,7 +28,7 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
 
 # Add any Sphinx extension module names here, as strings.
 # They can be extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-# extensions = [
+ extensions = [
               'sphinx.ext.autodoc',
               'sphinx.ext.doctest',
               'sphinx.ext.coverage',
@@ -36,10 +36,10 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
               'sphinx.ext.ifconfig',
               'sphinx.ext.viewcode',
               'sphinx.ext.intersphinx',
-              'sphinxcontrib.exceltable',
-              'sphinxcontrib.napoleon',
-              'sphinxcontrib.bibtex',
-              'sphinxcontrib.httpdomain',
+             # 'sphinxcontrib.exceltable',
+             # 'sphinxcontrib.napoleon',
+             # 'sphinxcontrib.bibtex',
+             # 'sphinxcontrib.httpdomain',
              ]
 
  mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
