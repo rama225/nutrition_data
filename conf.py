@@ -36,10 +36,10 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
               'sphinx.ext.ifconfig',
               'sphinx.ext.viewcode',
               'sphinx.ext.intersphinx',
-             # 'sphinxcontrib.exceltable',
-             # 'sphinxcontrib.napoleon',
-             # 'sphinxcontrib.bibtex',
-             # 'sphinxcontrib.httpdomain',
+              'sphinxcontrib.exceltable',
+              'sphinxcontrib.napoleon',
+              'sphinxcontrib.bibtex',
+              'sphinxcontrib.httpdomain',
              ]
 
  mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
